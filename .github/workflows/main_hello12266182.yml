@@ -58,9 +58,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_29AD6AC6F91F4ECBA1C86FAE9416D52B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CB45557BC47247898A12343EFBFA967E }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4A355DE027FE476DBF47672AF899F5DE }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E3CA2413C56B4ED99483BDF94D2EFCEF }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BBE6AC7C28DB42629CA524A41D0613F8 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FF6AF33D3D3E47D5991E97AE1603DF02 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -68,14 +68,4 @@ jobs:
         with:
           app-name: 'HELLO12266182'
           slot-name: 'Production'
-
-
-          cd path/to/your/hello12266182
-git init
-git remote add origin https://github.com/tanvipatel11/hello12266182.git
-git add .
-git commit -m "Initial commit - Hello 12266182 Flask App"
-git branch -M main
-git push -u origin main
-
           
